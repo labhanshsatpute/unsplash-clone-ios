@@ -11,7 +11,7 @@ import SwiftUI
 struct Unsplash_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GetStarted()
         }
     }
 }
