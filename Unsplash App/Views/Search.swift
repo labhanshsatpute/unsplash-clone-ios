@@ -5,8 +5,20 @@ struct Photo: Decodable, Identifiable {
     let description: String?
     let slug: String?
     let urls: PhotoUrls
+    let user: UserData
     struct PhotoUrls: Codable {
         let regular: URL
+    }
+    struct UserData: Codable {
+        let name: String?
+        let username: String
+        let bio: String?
+        let location: String?
+        let profile_image: UserProfile
+    }
+    struct UserProfile: Codable {
+        let small: URL?
+        let medium: URL?
     }
 }
 
@@ -18,8 +30,7 @@ struct Search: View {
     
     @State private var searchQuery: String = "car";
     @State private var pageNo: Int = 1
-    @State private var photos: [Photo] = []
-    
+    @State private var photos: [Photo] = []    
     func testAPI() {
         
         if let url = URL(string: "https://api.unsplash.com/search/photos/?client_id=Bj9rTPWn7NRhM1NA-V1WWARZXqDl5cywKUN0OHRVYcU&query=\(searchQuery)&page=\(pageNo)") {
@@ -73,12 +84,7 @@ struct Search: View {
                 VStack {
                     ScrollView {
                         ForEach(photos) { photo in
-                            if let description = photo.description {
-                                ImageCard(url: photo.urls.regular, description: description)
-                            }
-                            else {
-                                ImageCard(url: photo.urls.regular )
-                            }
+                            ImageCard(photo: photo )
                         }
                     }.cornerRadius(10)
                         .padding(.bottom, 10)
