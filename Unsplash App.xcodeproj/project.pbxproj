@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9578F9F92B00E64700AED115 /* UnsplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578F9F82B00E64700AED115 /* UnsplashController.swift */; };
 		95C325D52B0134E20096B97B /* ImageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C325D42B0134E20096B97B /* ImageCard.swift */; };
 		95CD344A2B0095A900DB1578 /* Unsplash_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD34492B0095A900DB1578 /* Unsplash_AppApp.swift */; };
 		95CD344E2B0095AC00DB1578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95CD344D2B0095AC00DB1578 /* Assets.xcassets */; };
@@ -18,7 +17,7 @@
 		95CD34762B00960700DB1578 /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD34752B00960700DB1578 /* GetStarted.swift */; };
 		95CD347A2B0098CD00DB1578 /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD34792B0098CD00DB1578 /* ButtonPrimary.swift */; };
 		95CD347C2B00A54300DB1578 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD347B2B00A54300DB1578 /* Search.swift */; };
-		95CD347E2B00AAA400DB1578 /* InputBoxWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD347D2B00AAA400DB1578 /* InputBoxWithButton.swift */; };
+		95CD347E2B00AAA400DB1578 /* InputBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD347D2B00AAA400DB1578 /* InputBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9578F9F82B00E64700AED115 /* UnsplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashController.swift; sourceTree = "<group>"; };
 		95C325D42B0134E20096B97B /* ImageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCard.swift; sourceTree = "<group>"; };
 		95CD34462B0095A900DB1578 /* Unsplash App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unsplash App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95CD34492B0095A900DB1578 /* Unsplash_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unsplash_AppApp.swift; sourceTree = "<group>"; };
@@ -53,7 +51,7 @@
 		95CD34752B00960700DB1578 /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
 		95CD34792B0098CD00DB1578 /* ButtonPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
 		95CD347B2B00A54300DB1578 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
-		95CD347D2B00AAA400DB1578 /* InputBoxWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBoxWithButton.swift; sourceTree = "<group>"; };
+		95CD347D2B00AAA400DB1578 /* InputBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +79,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9578F9F72B00E62600AED115 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				9578F9F82B00E64700AED115 /* UnsplashController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		95CD343D2B0095A900DB1578 = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +102,6 @@
 		95CD34482B0095A900DB1578 /* Unsplash App */ = {
 			isa = PBXGroup;
 			children = (
-				9578F9F72B00E62600AED115 /* Controllers */,
 				95CD34742B0095D400DB1578 /* Components */,
 				95CD34732B0095C900DB1578 /* Views */,
 				95CD34492B0095A900DB1578 /* Unsplash_AppApp.swift */,
@@ -160,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				95CD34792B0098CD00DB1578 /* ButtonPrimary.swift */,
-				95CD347D2B00AAA400DB1578 /* InputBoxWithButton.swift */,
+				95CD347D2B00AAA400DB1578 /* InputBox.swift */,
 				95C325D42B0134E20096B97B /* ImageCard.swift */,
 			);
 			path = Components;
@@ -297,9 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				95CD347A2B0098CD00DB1578 /* ButtonPrimary.swift in Sources */,
-				9578F9F92B00E64700AED115 /* UnsplashController.swift in Sources */,
 				95CD347C2B00A54300DB1578 /* Search.swift in Sources */,
-				95CD347E2B00AAA400DB1578 /* InputBoxWithButton.swift in Sources */,
+				95CD347E2B00AAA400DB1578 /* InputBox.swift in Sources */,
 				95CD34762B00960700DB1578 /* GetStarted.swift in Sources */,
 				95CD344A2B0095A900DB1578 /* Unsplash_AppApp.swift in Sources */,
 				95C325D52B0134E20096B97B /* ImageCard.swift in Sources */,
